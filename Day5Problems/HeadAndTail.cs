@@ -8,9 +8,9 @@ namespace Day5Problems
 {
     internal class HeadAndTail
     {
-        public static void HeadandTailPercentage(int n)
+        public static void HeadandTailPercentage()
         {
-            int headCount = 0, tailCount = 0;
+            int headCount = 0, tailCount = 0, n = 10;
             Random random = new Random();
             for (int i = 0; i < n; i++)
             {

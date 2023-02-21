@@ -5,9 +5,21 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome To Basic Core Programs");
-            Console.WriteLine("Enter the number of times you want to flip the coin");
-            int n = Convert.ToInt32(Console.ReadLine());
-            HeadAndTail.HeadandTailPercentage(n);
+            Console.WriteLine("\n1:HeadAndTail\n2:LeapYear\n11:Exit");
+            int option = Convert.ToInt32(Console.ReadLine());
+
+            switch (option)
+            {
+                case 1:
+                    HeadAndTail.HeadandTailPercentage();
+                    break;
+                case 2:
+                    LeapYear.LeapYearCheck();
+                    break;
+                default:
+                    Console.WriteLine("choose the above options");
+                    break;
+            }
             Console.ReadLine();
         }
     }
